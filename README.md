@@ -56,7 +56,7 @@
  * **MergeSort 归并排序**
  
   比较次数最少 `时间复杂度O(n log n)，空间复杂度O(n)，稳定！！！`
-  >适用场合：数据规模较大，对稳定性有要求，一般用于总体无序，但是各子项相对有序的数列。Arrays.sort(Object[] a)调用legacyMergeSort();
+  >适用场合：数据规模较大，对稳定性有要求，一般用于总体无序，但是各子项相对有序的数列。           Arrays.sort(Object[] a)调用legacyMergeSort();
 ---
 * **CountingRadixSort 计数基数排序**
 
