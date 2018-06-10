@@ -52,11 +52,14 @@
 
 是对冒泡排序的一种改进。通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。`时间复杂度O(n log n)，空间复杂度O(n log n)，不稳定`，选好枢纽元是使坏情况发生的关键截断范围选10比较合适，进入截断范围改用小规模高效率算法对小片段排序 
 >适用场合：数值范围较大，相同值的概率较小，数据量大且不考虑稳定性的情况，数值远大于数据量时威力更大。Arrays.sort(基本数据类型数组)调用DualPivotQuicksort.sort();
+The algorithm offers O(n log(n)) performance on many data sets that cause other
+quicksorts to degrade to quadratic performance, and is typically
+faster than traditional (one-pivot) Quicksort implementations.
 ---
  * **MergeSort 归并排序**
  
   比较次数最少 `时间复杂度O(n log n)，空间复杂度O(n)，稳定！！！`
-  >适用场合：数据规模较大，对稳定性有要求，一般用于总体无序，但是各子项相对有序的数列。           Arrays.sort(Object[] a)调用legacyMergeSort();
+  >适用场合：数据规模较大，对稳定性有要求，一般用于总体无序，但是各子项相对有序的数列。Arrays.sort(Object[] a)调用legacyMergeSort();
 ---
 * **CountingRadixSort 计数基数排序**
 
